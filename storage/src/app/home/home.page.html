@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Storage Ionic
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+      <ion-label position="floating">Digite aqui</ion-label>
+    <ion-input [(ngModel)]="text"></ion-input>
+  </ion-item>
+  <br>
+  <ion-button color="primary" expand="block" (click)="postStorage()">Salvar</ion-button>
+  <br>
+  <br>
+  Storage value: {{ valueStorage }}
+</ion-content>
